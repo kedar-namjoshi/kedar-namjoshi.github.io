@@ -1,0 +1,35 @@
+
+.title {
+    color: #0A0AFF;
+    padding-right: 1em;
+}
+
+.authors {
+    color: #000000; 
+    white-space: nowrap;
+    padding-right: 1em;
+}
+
+.conf {
+    color: #000000; 
+    white-space: nowrap;
+    padding-right: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    color: #0505D0;
+    text-decoration: none;
+}
+
+a[href] {
+}
+
+a[href]:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
