@@ -9,72 +9,89 @@
 
   <body>
     <div id="photo" style="width:100%;height:50%;">
-      <div id="left" style="float:left; width:30%;">
+      <div id="left" style="float:left; width:30%;"> 
 	<table border="0" cellspacing="0" cellpadding="2">
 	  <tr><td>
-	      <img src="kedar_namjoshi_bw.jpg" alt="Kedar Namjoshi" style="width:80%;">  </img>
+	      <!-- <img src="kedar_namjoshi_bw.jpg" alt="Kedar Namjoshi" style="width:80%;"> -->
+	      <img src="kedar_namjoshi_bw.jpg" alt="Kedar Namjoshi" style="width:60%;">  </img>
 	  </td></tr>
 	</table>
       </div>
-
-      <div id="summary" style="float:right; width:70%;">      
-	I work in computer science at <a href="http://www.bell-labs.com/">Bell Labs</a>.
+      
+      <div id="summary" style="float:right; width:70%;">
+	<p></p>
+	I work in computer science at <a href="http://www.bell-labs.com/">Bell Labs</a>. <br> <br>
 	My research is on simplifying the construction of provably correct and secure programs.
-
-	<h4> Contact </h4>
+	
+	<h4 style="margin-bottom:0.5em"> Contact </h4>
 	E-mail: kedar.namjoshi AT nokia-bell-labs.com <br>
 	Address: <a href="https://goo.gl/maps/UwA9bR175Y72"> Room 2B-435, 600-700 Mountain Avenue, Murray Hill, NJ 07974, USA </a>
       </div>
-
-      <div id="highlights" style="width:100%; clear:both;">
-	<hr>
-	<h4> Research Highlights </h4>
-	<p>
-          Developing correct and secure software is challenging. My research is on methods that simplify the construction of such programs, and provide mathematical guarantees of their correctness and security. 
-	<p>
-	  Much of this research is driven by the fascinating interplay between deductive and algorithmic approaches to program correctness. Deductive methods can suggest new automated approaches (e.g., for compositional reasoning). Conversely, algorithmic methods can be fruitfully viewed as proof generators (e.g. certifying automated model checkers). 
-	<p>
-	  My research includes work on 
-	  <ul>
-	    <li> <b> Parameterized verification: </b> <a href="papers/Emerson-Namjoshi-POPL-1995.pdf"> Cutoff theorems </a> which show that one can establish correctness of protocols for arbitrarily large network sizes by analyzing a few small instances, up to the cutoff bound.
-	      <p>  <li> <b> Program equivalence: </b> A <a href="papers/Namjoshi-FSTTCS-1997.pdf"> well-founded bisimulation </a> proof method that considerably simplifies proofs of program equivalence, e.g., for pipeline processors and compiler optimizations.
-	      <p>    <li> <b> Abstraction principles: </b> <a href="papers/Dams-Namjoshi-VMCAI-2005.pdf"> Linkages </a> between deductive proofs, model checking and abstraction, and their use for <a href="papers/Conway-Namjoshi-Dams-Edwards-CAV-2005.pdf">fast, incremental </a> program verification.
-	      <p> <li> <b> Compositional reasoning: </b> Fixed point methods for <a href="papers/Cohen-Namjoshi-CAV-2008.pdf">compositional</a> (i.e., divide-and-conquer) analysis of large concurrent programs, and <a href="papers/Namjoshi-Trefler-VMCAI-2012.pdf">neighborhood symmetry principles </a> which further simplify this analysis and provide broadly applicable parameterized cutoffs.
-	      <p> <li> <b> Self-certification: </b> <a href="papers/Namjoshi-CAV-2001.pdf">Ensuring the correctness of </a> of complex software -- model checkers, optimizing compilers and network OS's -- through generated proof certificates.
-	      <p> <li> <b> Program Synthesis: </b> Automatically <a href="papers/Bansal-Namjoshi-Saar-CAV-2018.pdf"> generating programs </a> from abstract specifications of their behavior; in particular, programs that work under adversarial conditions.
-	  </ul>
-	  This research has been supported, in part, by grants from the NSF and DARPA. 
-      </div>
+    </div>
 
 
-      <!-- <div id="current" style="width:100%; clear:both;"> -->
-      <!-- 	<hr> -->
-      <!-- 	<h4> Current Research Topics</h4> -->
-      <!-- 	<ul> -->
-      <!-- 	  <li> Self-Certifying, Secure Compilation: formally ensuring the correctness and the security of complex compiler optimizations through compiler-generated proof witnesses -->
-      <!-- 	  <li> Compositional Symmetry: simplifying the analysis of large networks of processes through new forms of symmetry reduction -->
-      <!-- 	  <li> Program Synthesis: fully automated construction of correct, privacy-preserving and failure-tolerant programs from specifications -->
-      <!-- 	</ul> -->
-      <!-- </div> -->
+    
+    
+    <div id="highlights" style="width:100%; clear:both;">
+      <p></p>
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <p></p>
+        Producing good software is challenging. My research develops methods to simplify program construction while providing precise guarantees of correctness and security. 
+      <p></p>
+	Much of my research is driven by the fascinating interplay between the deductive and algorithmic approaches to program correctness.
+	
+	A deductive proof method formalizes an intuitive pattern of reasoning, which can be automated. Conversely, algorithmic methods such as model checking can produce deductive proofs to certify their results. 
+      <p></p>
+      <h4> Research Highlights </h4>
+      <ul>
+	<li> <b> Parameterized Protocols: </b> <a href="papers/Emerson-Namjoshi-POPL-1995.pdf"> Cutoff theorems </a> make it possible to prove that a protocol is correct for all configurations by checking only a few small instances.
+	  <p> </p>
+
+	<li> <b> Program Equivalence: </b> <a href="papers/Namjoshi-FSTTCS-1997.pdf"> Well-founded bisimulations </a> simplify proofs of equivalence up to "stuttering," e.g., for the correctness of pipelined machines.
+	  
+	  <p> </p>	      
+	  
+	<li> <b> Abstraction: </b> <a href="papers/Dams-Namjoshi-VMCAI-2005.pdf"> Linkages </a> between deductive proofs, model checking, and abstraction, make  <a href="papers/Conway-Namjoshi-Dams-Edwards-CAV-2005.pdf">  fast, incremental program verification</a> feasible.
+	  
+	  <p> </p>
+	  
+	<li> <b> Modular Reasoning: </b> <a href="papers/Cohen-Namjoshi-CAV-2008.pdf"> Divide-and-conquer methods </a> tackle state explosion in the analysis of large concurrent programs, while <a href="papers/Namjoshi-Trefler-VMCAI-2012.pdf"> new symmetry principles </a> further speed up modular analysis.
+	  
+	  <p> </p>
+	  
+	<li> <b> Self-Certification: </b> <a href="papers/Namjoshi-CAV-2001.pdf"> Run-time certificates </a> make it easier to formally guarantee the correctness of complex software programs -- model checkers, optimizing compilers, and network OS's. 
+	  
+	  <p> </p>
+	  
+	<li> <b> Synthesis: </b>  <a href="https://popl20.sigplan.org/details/POPL-2020-Research-Papers/61/Synthesis-of-Coordination-Programs-from-Linear-Temporal-Specifications"> Automatically generated programs </a> coordinate groups of software agents, guiding them towards a desired behavior. 
+	  
+      </ul>
+      This research has been supported, in part, by grants from the NSF and DARPA.
+      <p></p>
+    </div>
 
 
-      <div id="cv" style="width:100%; clear:both;">
-	<hr>
-	<h4> And a bit more ... </h4>
-	Here is my academic <a href="kedar_namjoshi_cv.pdf">CV</a>.
-	<p>
-	  And an up-to-date list of <a href="publications.html">publications</a>; the full list is on <a href="http://dblp.org/pid/96/6348"> DBLP </a>.  
-	<p>
-	  I had the privilege of presenting a talk on the <a href="papers/Computing-At-Bell-Labs-IEEE-Milestone-2014.pdf"> history of computing at Bell Labs</a> at the <a href="http://theinstitute.ieee.org/ieee-roundup/members/achievements/ieee-milestone-honors-nearly-a-century-of-breakthroughs-at-bell-labs"> IEEE Milestone </a> dedication ceremony in December 2014.
-	<p>
-	  I graduated with a B.Tech degree from <a
-						   href="http://www.cse.iitm.ac.in/"> IIT Madras </a> and a Ph.D. from the <a
-															      href="http://www.cs.utexas.edu">University of Texas at Austin</a>, where <a
-																									  href="http://www.cs.utexas.edu/~emerson/">E. Allen Emerson</a> was my
-	  thesis advisor. I then joined the Computing Sciences Research Center at
-	  Bell Labs (better known as <a href="http://spinroot.com/gerard/1127_alumni.html">Center 1127</a>), and have been here since. As a graduate student at UT Austin, I had the good fortune to interact closely with  <a href="http://www.cs.utexas.edu/~EWD/">Edsger W. Dijkstra</a>, as a member of the ATAC (Dijkstra's Austin Tuesday Afternoon Club). His views on what constitutes good research and the example he put forward have had a deep and long-lasting influence.
-	  <br>
-	  <br>
-      </div>
+
+
+    <div id="cv" style="width:100%; clear:both;">
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <h4> And a bit more... </h4>
+      My <a href="kedar_namjoshi_cv.pdf">CV</a> and an up-to-date list of <a href="publications.html">publications</a>; the full list is on <a href="http://dblp.org/pid/96/6348"> DBLP </a>.  
+      <p></p>
+      I had the privilege of giving a talk on the <a href="papers/Computing-At-Bell-Labs-IEEE-Milestone-2014.pdf"> history of computing at Bell Labs</a> at an IEEE Milestone dedication ceremony at Murray Hill in December 2014.
+      <p></p>
+
+      
+      I graduated with a B.Tech degree from <a href="http://www.cse.iitm.ac.in/"> IIT Madras </a> and a Ph.D. from the <a href="http://www.cs.utexas.edu">University of Texas at Austin</a>, where <a href="http://www.cs.utexas.edu/~emerson/">E. Allen Emerson</a> was my thesis advisor. I then joined the famed Computing Sciences Research Center at Bell Labs (perhaps better known as <a href="http://spinroot.com/gerard/1127_alumni.html">Center 1127</a>), and have been here since.
+
+      <p></p>
+      As a graduate student at UT Austin, I had the good fortune to interact closely with  <a href="http://www.cs.utexas.edu/~EWD/">Edsger W. Dijkstra</a> as a member of his ATAC (the <a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD09xx/EWD927.html">Austin Tuesday Afternoon Club</a>).
+      His views on what constitutes good research and good writing and the example he put forward have had a deep and long-lasting influence.
+      <br>
+      <br>
+    </div>
+    
+    
   </body>
 </html>
+
